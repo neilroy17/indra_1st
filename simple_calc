@@ -1,0 +1,38 @@
+def add(a,b):
+	return a+b
+def diff(a,b):
+	return a-b
+def prod(a,b):
+	return a*b
+def div(a,b):
+	return a/b
+def mod(a,b):
+	return a%b
+ans='y'
+while ans == 'y':
+	n1=int(input("Enter 1st number: "))
+	n2=int(input("Enter 2nd number: "))
+	print('''Press '1' for Addition
+	Press '2' for Subtraction
+	Press '3' for Multiplication
+	Press '4' for Division
+	Press '5' for Modulus''')
+	ch=int(input("Enter your choice: "))
+	if ch==1:
+		x=add(n1,n2)
+		print('Sum =',x)
+	elif ch==2:
+		x=diff(n1,n2)
+		print('Subtraction =',x)
+	elif ch==3:
+		x=prod(n1,n2)
+		print('Product =',x)
+	elif ch==4:
+		x=div(n1,n2)
+		print('Division =',x)
+	elif ch==5:
+		x=mod(n1,n2)
+		print('Remainder =',x)
+	else:
+		print("Wrong Choice")
+	ans=input("Do you want to continue, Press y/n: ")	
